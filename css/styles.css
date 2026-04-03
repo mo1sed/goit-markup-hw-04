@@ -82,6 +82,7 @@ ul {
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
+    position: relative;
 }
 .logo-text {
     font-family: 'Raleway', sans-serif;
@@ -116,12 +117,19 @@ ul {
 }
 .overlay {
     background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    fill: none;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 48px;
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -219,6 +227,7 @@ ul {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    position: relative;
 }
 
 .nav-link:hover,
@@ -227,6 +236,41 @@ ul {
 .change-color-address:focus {
     color: #404bbf;
 }
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    opacity: 0;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    opacity: 1;
+}
+
+.change-color-address::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    opacity: 0;
+}
+
+.change-color-address:hover::after,
+.change-color-address:focus::after {
+    opacity: 1;
+}
+
 .container {
     margin: 0 auto;
     padding-left: 15px;
@@ -235,6 +279,66 @@ ul {
 }
 .features {
     width: calc((100% - 72px) / 4);
+}
+.feature-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+}
+
+.footer-links-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: #4D5AE5;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-brand {
+    margin-right: 120px;
+}
+
+.footer-social-block {
+    min-width: 208px;
+}
+
+.footer-social-title {
+    margin: 0;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.footer-links {
+    display: block;
+}
+
+.feature-icon {
+    display: block;
 }
 .features-list {
     display: flex;
@@ -308,7 +412,7 @@ ul {
 }
 
 .footer-text {
-    display: flex;
+    display: block;
     max-width: 264px;
     margin-top: 16px;
 }
@@ -324,3 +428,4 @@ ul {
     white-space: nowrap;
     border: 0;
 }
+
