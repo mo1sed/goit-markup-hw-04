@@ -1,0 +1,326 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.span-studio {
+    color:#4D5AE5;
+    font-family: 'Raleway', sans-serif;
+}
+.webstudio-cloud {
+    color:#F4F4FD;
+    font-family: 'Raleway', sans-serif;
+}
+.webstudio-iris {
+    color: #2E2F42;
+    font-family: 'Raleway', sans-serif;
+}
+
+.site-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.overlay-header {
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #434455;
+    background-color: #fff;
+}
+p{
+    font-size:16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+/* Reset margins for headings and paragraphs */
+h1, h2, h3, p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Класові селектори для стилізації */
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    line-height: 1.07;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+}
+.feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.styled-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-link {
+    font-weight: 500;
+    color: #2E2F42;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+}
+.logo-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-white-team {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
+}
+.styled-button {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;   
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    border: none;
+    outline: none;
+}
+.overlay {
+    background-color: #2E2F42;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+.overlay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+.overlay-footer {
+    background-color: #2E2F42;
+    color: #F4F4FD;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.overlay-title {
+    text-align: center;
+    max-width: 496px;
+}
+.team-title {
+    text-align: center;
+    color:#2E2F42;
+    line-height: 1.11;
+}
+.team-member-title {
+    text-align: center;
+    color:#2E2F42;
+}
+.team-member-role {
+    text-align: center;
+    color:#434455;
+}
+.team-card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.team-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 32px 16px;
+}
+.team-center {
+    background-color: #F4F4FD;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+.portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.portfolio-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+.portfolio-title {
+    text-align: center;
+    color: #2E2F42;
+    line-height: 1.11;
+}
+.portfolio-item-title {
+    color:#2E2F42;
+}
+.portfolio-item-category {
+    color:#434455;
+}
+
+
+.change-button {
+    text-align: center;
+}
+
+.styled-button:hover,
+.styled-button:focus,
+.change-button:hover,
+.change-button:focus {
+    background-color: #404bbf;
+}
+
+
+.change-color-address {
+    color: #434455;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.change-color-address:hover,
+.change-color-address:focus {
+    color: #404bbf;
+}
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1158px;
+}
+.features {
+    width: calc((100% - 72px) / 4);
+}
+.features-list {
+    display: flex;
+    gap:24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-title-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    padding: 0;
+}
+
+.header-white {
+    display: block;
+    width: calc((100% - 48px) / 3);
+    gap: 24px;
+}
+.portfolio-card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.portfolio-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 120px;
+    padding: 32px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.nav-list {
+    display: flex;
+    gap:40px;
+    margin-left: 76px;
+
+}
+
+.change-color {
+    display: flex;
+    align-items: center;
+}
+
+.address-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.address-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.contact-address {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    display: flex;
+    max-width: 264px;
+    margin-top: 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
