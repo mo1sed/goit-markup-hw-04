@@ -18,7 +18,7 @@
 
 .site-header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -261,24 +261,6 @@ ul {
     opacity: 1;
 }
 
-.site-header .nav-list .nav-link.current {
-    color: #2e2f42;
-}
-
-.site-header .nav-list .nav-link.current::after {
-    opacity: 0;
-}
-
-.site-header .nav-list .nav-link:hover,
-.site-header .nav-list .nav-link:focus {
-    color: #404bbf;
-}
-
-.site-header .nav-list .nav-link:hover::after,
-.site-header .nav-list .nav-link:focus::after {
-    opacity: 1;
-}
-
 .change-color-address::after {
     content: '';
     position: absolute;
@@ -381,11 +363,14 @@ ul {
 .feature-icon {
     display: block;
 }
+.features-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .features-list {
     display: flex;
     gap:24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 .team-title-container {
     display: flex;
