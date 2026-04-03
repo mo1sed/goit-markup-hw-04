@@ -241,7 +241,7 @@ ul {
     color: #404bbf;
 }
 
-.nav-link.current {
+.current {
     color: #404bbf;
 }
 
@@ -257,7 +257,7 @@ ul {
     opacity: 0;
 }
 
-.nav-link.current::after {
+.current::after {
     opacity: 1;
 }
 
